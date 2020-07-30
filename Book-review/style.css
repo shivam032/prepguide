@@ -1,0 +1,80 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-size: 1em;
+  }
+  
+  nav {
+    width: 100%;
+    height: 56px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 2px 2px 7px 2px darkgray;
+    position: fixed;
+    top: 0px;
+    z-index: 1111111;
+  }
+  .menu-button {
+    height: 56px;
+    width: 3em;
+    margin: 0px 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .menu-bars {
+    height: 0.125em;
+    width: 1.125em;
+    background: black;
+    margin: 0 1em;
+    border-radius: 1px;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .menu-bars::before,
+  .menu-bars::after {
+    content: "";
+    height: 0.125em;
+    width: 1.125em;
+    background: black;
+    position: absolute;
+    border-radius: 1px;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .menu-bars::before {
+    transform: translateY(-0.25em);
+  }
+  
+  .menu-bars::after {
+    transform: translateY(0.25em);
+  }
+  
+  nav img {
+    height: 26px;
+  
+    padding: 15px;
+    margin: 0px 0em;
+  }
+  #body-container {
+    position: relative;
+    top: 56px;
+  }
+  
+  #hero-section {
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  #hero-section h1 {
+    padding: 0px;
+    margin: 20px 0.7px;
+    font-size: 28px;
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
+  }
+  
