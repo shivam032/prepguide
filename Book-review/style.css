@@ -72,9 +72,45 @@ body {
   
   #hero-section h1 {
     padding: 0px;
-    margin: 20px 0.7px;
+    margin: 20px 0.7px 5px 0.7px;
     font-size: 28px;
     font-family: "Courier New", Courier, monospace;
     text-align: center;
   }
   
+  #hero-section h2 {
+    padding: 0px 0px;
+    margin: 0px 0.7px;
+    font-size: 24px;
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
+    text-decoration: underline dashed black 3px;
+    margin-bottom: 30px;
+  }
+
+  .search-bar{
+    background-color: rgb(246, 229, 206);
+    display: flex;
+    width: min-content;
+    margin: 0 auto;
+    border-radius: 10px;
+    
+  }
+
+  #search-input{
+    display: block;
+    height: 20px;
+    width:70vw;
+    border: none;
+    background-color: rgb(246, 229, 206);
+    border-radius: 10px;
+    margin-left: 10px;
+  }
+
+  .search-bar img{
+    display: block;
+    margin-right: 10px;
+    
+    
+
+  }
