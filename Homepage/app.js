@@ -5,12 +5,15 @@ hamburger.addEventListener("click", () => {
 	const menuList = document.querySelector(".menu-list");
 
 	if (c) {
-		console.log("open");
+		//open
 		hamburger.classList.remove("close");
 		menuList.style.height = "80vh";
+		
 	} else {
-		console.log("closed");
+		//close
 		hamburger.classList.add("close");
 		menuList.style.height = "0vh";
+		
+		
 	}
 });

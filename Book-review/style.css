@@ -88,7 +88,8 @@ nav {
 /*animation ends*/
 /*Menu list*/
 .menu-list {
-	position: relative;
+	position: fixed;
+	z-index: 1111111;
 	top: 56px;
 	width: 98vw;
 	height: 0vh;
@@ -117,7 +118,7 @@ nav {
 }
 
 
-.menu-li:hover {
+.menu-li a:hover {
 	background-color: rgb(175, 206, 233);
 	color: black;
 }
@@ -128,6 +129,10 @@ nav {
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 	color: black;
 	font-weight: 350;
+	width:98vw;
+	padding: 10px 0px;
+	display: block;
+
 }
 /*Menu list ends*/
 
