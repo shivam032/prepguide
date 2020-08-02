@@ -7,7 +7,7 @@ hamburger.addEventListener("click", () => {
 	if (c) {
 		console.log("open");
 		hamburger.classList.remove("close");
-		menuList.style.height = "100vh";
+		menuList.style.height = "80vh";
 	} else {
 		console.log("closed");
 		hamburger.classList.add("close");

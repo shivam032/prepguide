@@ -67,7 +67,7 @@ nav {
 }
 
 .menu-button.open .menu-bars::after {
-	transform: rotate(-45deg);
+	transform: rotate(135deg);
 	transition: all 0.3s ease-out;
 }
 /*close*/
@@ -100,7 +100,7 @@ nav {
 }
 
 #menu-ul {
-	height: 98vh;
+	height: 78vh;
 	padding: 0px;
 	margin: 10px 0px;
 	display: flex;
