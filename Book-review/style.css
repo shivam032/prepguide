@@ -54,9 +54,87 @@ nav {
 	transform: translateY(0.25em);
 }
 
+/* animating menu bars */
+/*open*/
+
+.menu-button.open .menu-bars {
+	transition: all 0.3s ease-out;
+	rotate: -45deg;
+}
+.menu-button.open .menu-bars::before {
+	transform: translateY(0px) ;
+	rotate: 90deg;
+	transition: all 0.5s ease-out;
+}
+
+.menu-button.open .menu-bars::after {
+	transform:translateY(0px) ;
+	rotate: 90deg;
+	transition: all 0.5s ease-out;
+}
+/*close*/
+
+.menu-button.close .menu-bars {
+	height: 0.125em;
+	transition: all 0.3s ease-out;
+}
+.menu-button.close .menu-bars::before {
+	transform: rotate(0deg) translateY(0.25em);
+	transition: all 0.3s ease-out;
+}
+
+.menu-button.close .menu-bars::after {
+	transform: rotate(0deg) translateY(-0.25em);
+	transition: all 0.3s ease-out;
+}
+/*animation ends*/
+/*Menu list*/
+.menu-list {
+	position: relative;
+	top: 56px;
+	width: 98vw;
+	height: 0vh;
+	margin: 0px 2px;
+	background-color: aliceblue;
+	padding: 0px;
+	overflow: hidden;
+	transition: all .6s ease-in;
+}
+
+#menu-ul {
+	height: 98vh;
+	padding: 0px;
+	margin: 10px 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	text-align: center;
+}
+
+.menu-li {
+	list-style: none;
+	padding: 13px 0px;
+	margin: 0px;
+	
+}
+
+
+.menu-li:hover {
+	background-color: rgb(175, 206, 233);
+	color: black;
+}
+
+.menu-li a {
+	text-decoration: none;
+	font-size: 16px;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	color: black;
+	font-weight: 350;
+}
+/*Menu list ends*/
+
 nav img {
 	height: 26px;
-
 	padding: 15px;
 	margin: 0px 0em;
 }
@@ -97,8 +175,6 @@ nav img {
 	box-shadow: 0px 0px 9px 0px rgb(219, 89, 14);
 }
 
-
-
 #search-input {
 	display: block;
 	height: 32px;
@@ -112,7 +188,7 @@ nav img {
 #search-input::placeholder {
 	font-size: 13px;
 }
-	
+
 .search-bar img {
 	display: block;
 	margin-right: 10px;
@@ -121,7 +197,7 @@ nav img {
 	width: 34px;
 }
 
-.blogs{
-  margin: 30px 1vw;
-  width: 98vw; 
+.blogs {
+	margin: 30px 1vw;
+	width: 98vw;
 }
