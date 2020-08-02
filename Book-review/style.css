@@ -62,14 +62,12 @@ nav {
 	rotate: -45deg;
 }
 .menu-button.open .menu-bars::before {
-	transform: translateY(0px) ;
-	rotate: 90deg;
+	transform: translateY(0px) rotate(90deg);
 	transition: all 0.5s ease-out;
 }
 
 .menu-button.open .menu-bars::after {
-	transform:translateY(0px) ;
-	rotate: 90deg;
+	transform:translateY(0px) rotate(90deg);
 	transition: all 0.5s ease-out;
 }
 /*close*/
