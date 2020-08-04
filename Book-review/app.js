@@ -14,3 +14,9 @@ hamburger.addEventListener("click", () => {
 		menuList.style.height = "0vh";
 	}
 });
+
+
+
+
+
+
